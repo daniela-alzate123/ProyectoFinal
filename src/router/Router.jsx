@@ -1,22 +1,30 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import PublicRouter from './PublicRouter'
 import PrivateRouter from './PrivateRouter'
 import Login from '../pages/Login/Login'
-import Home from '../pages/home/Home'
+
+import { useSelector } from 'react-redux'
+import Principal from '../pages/principal/Principal'
+import SignUp from '../pages/signUp/SignUp'
+
+
+
 
 const Router = () => {
+
+  const {isLogout} = useSelector(state => state.auth)
   return (
-   
+
       <BrowserRouter>
         <Routes>
           <Route path='/'>
-            <Route element={<PublicRouter isLogout={false}/>}>
+            <Route element={<PublicRouter isLogout={isLogout}/>}>
               <Route index element={<Login/>}/>
-              <Route path='register' element={<Register/>}/>
+              <Route path='signUp' element={<SignUp/>}/>
             </Route>
-            <Route element={<PrivateRouter isLogout={false} />}>
-              <Route path= 'home' element={<Home/>}/>
+            <Route element={<PrivateRouter isLogout={isLogout} />}>
+              <Route path= 'principal' element={<Principal/>}/>
             </Route>
             
           </Route>

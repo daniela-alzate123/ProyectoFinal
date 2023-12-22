@@ -1,0 +1,88 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2eccc1; 
+}
+
+.login_contenido {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #333333;
+}
+
+h3 {
+  color: #2eccc1; 
+}
+
+label {
+  color: #2eccc1; 
+}
+
+.form-control {
+  border: 1px solid #2eccc1; 
+}
+
+.form-control:focus {
+  border-color: #2eccc1; 
+}
+
+.btn-success {
+  background-color: #2eccc1;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #2eccc1; 
+}
+
+.main_login_info {
+  padding: 20px;
+}
+
+.form-group-password {
+  margin-bottom: 5px;
+}
+
+.btn-login {
+  margin-top: 15px;
+}
+
+.btn-register {
+  margin-top: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn-login {
+  white-space: nowrap;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.link-registrarse {
+  color: #fff;
+  background-color: #2eccc1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  width: 48%;
+  max-width: 200px;
+  white-space: nowrap;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.link-registrarse:hover {
+  background-color: #2eccc1; 
+}
+
